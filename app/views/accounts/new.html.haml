@@ -1,0 +1,7 @@
+%h1 Nueva Cuenta
+.panel.panel-default
+  .panel-body
+    = form_for @account do |f|
+      = render partial:'fields', locals:{f:f}
+      = f.submit 'Crear', class:'btn btn-primary'
+= link_to 'Volver a cuentas', accounts_path

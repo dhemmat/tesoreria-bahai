@@ -1,0 +1,8 @@
+%tr
+  %td= account.name 
+  %td= account.description
+  %td= account.account_type
+  %td
+    = link_to 'Editar', edit_account_path(account)
+    \/
+    = link_to 'Eliminar', account_path(account), method: :delete, data: { confirm: '¿Está seguro de que desea eliminar la cuenta?' }

@@ -1,0 +1,12 @@
+%h1 Cuentas
+=link_to 'Nueva cuenta', new_account_path
+.panel.panel-default
+  .panel-body
+    %table.table
+      %thead
+        %tr
+          %th Nombre
+          %th Descripci&oacute;n
+          %th Tipo
+      %tbody
+        = render @accounts
